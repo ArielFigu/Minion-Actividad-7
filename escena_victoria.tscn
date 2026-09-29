@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d0j0p1df238t7"]
+
+[node name="Label" type="CanvasLayer" unique_id=905813157]
+
+[node name="Control" type="Control" parent="." unique_id=339574215]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control" unique_id=1719910337]
+layout_mode = 0
+offset_right = 1002.0
+offset_bottom = 413.0
+text = "Buen entrenamiento"
+horizontal_alignment = 1
+vertical_alignment = 1

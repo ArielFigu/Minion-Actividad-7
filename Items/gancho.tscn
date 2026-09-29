@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cbtcnwqqciid3"]
+
+[ext_resource type="Texture2D" uid="uid://cjg1dlqyfre8d" path="res://Items/Gancho.png" id="1_qor2d"]
+[ext_resource type="Script" uid="uid://o2a5hqdmak20" path="res://Items/gancho.gd" id="1_rhqu1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5cipi"]
+
+[node name="Dash" type="Area3D" unique_id=1531337251]
+script = ExtResource("1_rhqu1")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1520744291]
+layers = 4
+texture = ExtResource("1_qor2d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1601351419]
+transform = Transform3D(3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0)
+shape = SubResource("SphereShape3D_5cipi")

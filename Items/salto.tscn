@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dpr3wctosva8w"]
+
+[ext_resource type="Script" uid="uid://yajp2wd6i88u" path="res://Items/salto.gd" id="1_1bixs"]
+[ext_resource type="Texture2D" uid="uid://b7wfee8xnugid" path="res://Items/Jump.png" id="1_06kkk"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5cipi"]
+
+[node name="Dash" type="Area3D" unique_id=1531337251]
+script = ExtResource("1_1bixs")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1520744291]
+texture = ExtResource("1_06kkk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1601351419]
+transform = Transform3D(3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0)
+shape = SubResource("SphereShape3D_5cipi")

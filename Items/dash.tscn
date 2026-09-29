@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://62g6dhrjqy2h"]
+
+[ext_resource type="Texture2D" uid="uid://dj7nlbj7yje1i" path="res://Items/Dash.png" id="1_hljgw"]
+[ext_resource type="Script" uid="uid://cea32uy7bhnf2" path="res://Items/dash.gd" id="1_jnnbu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5cipi"]
+
+[node name="Dash" type="Area3D" unique_id=1531337251]
+script = ExtResource("1_jnnbu")
+distancia_dash = 50.0
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1520744291]
+texture = ExtResource("1_hljgw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1601351419]
+transform = Transform3D(3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0, 3.8918824, 0, 0, 0)
+shape = SubResource("SphereShape3D_5cipi")

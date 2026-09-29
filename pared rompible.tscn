@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bkgjldvsa6e5l"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_5cipi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mnkjj"]
+albedo_color = Color(0.17610979, 0.104228936, 0.0014185635, 1)
+metallic = 0.4
+
+[node name="Node3D" type="Node3D" unique_id=2037077547]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=752361018]
+use_collision = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=603122664]
+transform = Transform3D(2.2891498, 0, 0, 0, 2.8337827, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("PrismMesh_5cipi")
+material = SubResource("StandardMaterial3D_mnkjj")
